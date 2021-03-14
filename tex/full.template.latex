@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=1.8cm, bottom=6cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[polish, english]{babel}
+\usepackage{polski}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\center{
+  \large{
+    \textbf{
+      Lista osób uprawnionych do korzystania z pomieszczenia ,,Rowerowni''\\
+      w DS Mikrus -- {{type}} {{year}}
+    }
+  }
+}
+	
+\begin{table}[h!]
+  \centering
+  \begin{tabularx}{\textwidth}{
+      | >{\raggedright\arraybackslash \hsize=0.85\hsize}X
+      | >{\raggedright\arraybackslash \hsize=1.1\hsize}X
+      | >{\raggedright\arraybackslash}X
+      | >{\raggedleft\arraybackslash}X
+      | >{\raggedleft\arraybackslash \hsize=1.05\hsize}X |
+  }
+    \hline
+    \bf Numer haka & \bf Nazwisko \bf & \bf Imię & \bf Numer pokoju & \bf Numer telefonu \\ \hline\hline
+    {{data}}
+  \end{tabularx}
+\end{table}
+
+\vspace*{\fill}
+\flushright{Podpis przedstawiciela Rady Mieszkańców}
+
+\end{document}
