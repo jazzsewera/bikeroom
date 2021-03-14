@@ -430,3 +430,5 @@ dmypy.json
 
 ## Out directory
 out/
+
+data/data.csv
